@@ -1,0 +1,110 @@
+/* ===== SOBRE ===== */
+
+.sobre {
+  padding: 32px 0 80px;
+}
+
+.sobre-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 176px;
+}
+
+.sobre-media {
+  flex: 0 0 400px;
+}
+
+.sobre-media img {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  display: block;
+}
+
+.sobre-content {
+  flex: 1;
+  max-width: 659px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.sobre-intro {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.sobre-hello {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #181616;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.sobre-lead {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #181616;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.sobre-texto p + p {
+  margin-top: 16px;
+}
+
+.sobre-links {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 24px;
+}
+
+.sobre-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  width: fit-content;
+  padding: 8px;
+  background: #FFFFFE;
+}
+
+.sobre-link span {
+  font-family: 'Source Serif Pro', serif;
+  font-size: 12px;
+  font-weight: 700;
+  color: #181616;
+}
+
+.sobre-link img {
+  width: 15px;
+  height: 15px;
+  display: block;
+}
+
+/* responsivo */
+@media (max-width: 1100px) {
+  .sobre-container {
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .sobre-media {
+    flex: none;
+  }
+
+  .sobre-media img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+  }
+
+  .sobre-content {
+    max-width: 100%;
+  }
+}

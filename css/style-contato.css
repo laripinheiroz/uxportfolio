@@ -1,0 +1,187 @@
+/* ===== CONTATO ===== */
+
+.contato {
+  padding: 32px 0 80px;
+}
+
+.contato-layout {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 48px;
+}
+
+/* COLUNA ESQUERDA */
+
+.contato-info {
+  width: 217px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding-right: 48px;
+}
+
+.contato-item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.contato-item h2 {
+  font-family: 'Source Serif Pro', serif;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.contato-item p {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #181616;
+  margin: 0;
+}
+
+/* LINK DO CURRÍCULO */
+
+.curriculo-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  width: fit-content;
+  padding-top: 4px;
+}
+
+.curriculo-link span {
+  font-family: 'Source Serif Pro', serif;
+  font-size: 12px;
+  font-weight: 700;
+  color: #181616;
+}
+
+.curriculo-link img {
+  width: 15px;
+  height: 15px;
+  display: block;
+}
+
+/* COLUNA DIREITA */
+
+.contato-form-wrap {
+  flex: 1;
+  min-width: 0;
+}
+
+.contato-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.contato-top h2 {
+  font-size: 32px;
+  margin: 0;
+}
+
+.contato-top p {
+  font-family: 'Source Serif Pro', serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #181616;
+  margin: 0;
+  text-align: right;
+  max-width: 360px;
+}
+
+/* FORM */
+
+.contato-form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.field label {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #181616;
+}
+
+.field input,
+.field textarea {
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid #D0D0D0;
+  outline: none;
+  background: transparent;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 16px;
+  color: #181616;
+  padding: 8px 0 10px;
+}
+
+.field textarea {
+  min-height: 160px;
+  resize: vertical;
+}
+
+.field-message {
+  margin-top: 12px;
+}
+
+.contato-button {
+  width: 100%;
+  height: 28px;
+  border: 0;
+  background: #400708;
+  color: #FFFFFE;
+  font-family: 'Source Serif Pro', serif;
+  font-size: 12px;
+  font-weight: 400;
+  cursor: pointer;
+}
+ 
+.contato-form-wrap {
+  flex: 1;
+  min-width: 0;
+
+  border: 1px solid #E6E6E6; /* borda leve */
+  padding: 32px;
+}
+
+/* RESPONSIVO */
+
+@media (max-width: 1100px) {
+  .contato-layout {
+    flex-direction: column;
+  }
+
+  .contato-info {
+    width: 100%;
+    padding-right: 0;
+  }
+
+  .contato-form-wrap {
+    width: 100%;
+  }
+
+  .contato-top {
+    flex-direction: column;
+  }
+
+  .contato-top p {
+    text-align: left;
+    max-width: 100%;
+  }
+}

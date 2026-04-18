@@ -213,3 +213,20 @@
   letter-spacing: 2px;
   opacity: 0.5;
 }
+
+.project img {
+  width: 100%;
+  margin-top: 24px;
+}
+
+.subtitle {
+  max-width: 500px;
+  margin-bottom: 32px;
+}
+
+.back {
+  display: inline-block;
+  margin-bottom: 24px;
+  text-decoration: none;
+  color: #181616;
+}
