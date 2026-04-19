@@ -189,27 +189,3 @@
   padding-left: 20px;
   max-width: 800px;
 }
-
-/* ===== OUTROS PROJETOS ===== */
-.projects-showcase {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 32px;
-}
-
-.projects-image img {
-  width: 100%;
-  max-width: 900px;
-}
-
-.projects-vertical {
-  width: 120px;
-  display: flex;
-  justify-content: center;
-  writing-mode: vertical-rl;
-  transform: rotate(180deg);
-  font-size: 48px;
-  letter-spacing: 2px;
-  opacity: 0.5;
-}

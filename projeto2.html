@@ -4,23 +4,23 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>PetMatch</title>
+  <title>Projeto PetMatch</title>
 
   <!-- FONTS -->
   <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@400&family=Quicksand:wght@400&display=swap" rel="stylesheet">
 
   <!-- CSS -->
   <link rel="stylesheet" href="css/style-base.css">
-  <link rel="stylesheet" href="css/style-projeto2.css"> <!-- troca por cada página -->
-
+  <link rel="stylesheet" href="css/style-projeto2.css">
 </head>
 
 <body>
 
-<!-- ===== HEADER (PADRÃO EM TODAS) ===== -->
 <header class="header">
+  
+  <!-- ESQUERDA -->
   <div class="header-left">
-    <img src="assets/icons/woman.svg" class="logo">
+    <img src="assets/icons/woman.svg" alt="logo" class="logo">
 
     <nav class="menu">
       <a href="index.html">Início</a>
@@ -30,200 +30,247 @@
     </nav>
   </div>
 
-<div class="header-right">
-  <img src="assets/icons/language.svg" alt="idioma">
+  <!-- DIREITA -->
+  <div class="header-right">
+    <img src="assets/icons/language.svg" alt="idioma">
 
-  <a href="https://www.linkedin.com/in/larissapinheiroz/" 
-     target="_blank" 
-     rel="noopener noreferrer">
-    <img src="assets/icons/linkedin.svg" alt="LinkedIn">
-  </a>
-</div>
+    <a href="https://www.linkedin.com/in/larissapinheiroz/" target="_blank" rel="noopener noreferrer">
+      <img src="assets/icons/linkedin.svg" alt="LinkedIn">
+    </a>
+  </div>
+
 </header>
 
-<main class="project">
+<!-- TOPO -->
+<section class="section project-top">
+  <a href="./index.html" class="back-button">← Voltar</a>
+  <h1 class="project-title">PetMatch</h1>
+</section>
 
-  <!-- HERO -->
-  <section class="section hero-project">
-    <div class="container">
+<!-- HERO -->
+<section class="project-hero-image">
+  <img src="assets/images/projeto2.png" class="main-mockup" alt="Projeto PetMatch">
+</section>
 
-      <a href="index.html" class="back">← Voltar</a>
+<!-- DETAILS -->
+<section class="section project-details">
+  <div class="details-grid">
 
-      <h1>PetMatch</h1>
-
-      <p class="subtitle">
-        Aplicativo de conexão entre tutores e cuidadores de pets, com foco em compatibilidade, confiança e praticidade.
-      </p>
-
-      <!-- IMAGEM PRINCIPAL -->
-      <img src="assets/images/projeto2.png" alt="PetMatch telas">
-
-    </div>
-  </section>
-
-  <!-- CONTEXTO -->
-  <section class="section">
-    <div class="container">
-
-      <h2>Contexto</h2>
-
+    <div class="detail-item">
+      <h3>Problema</h3>
+      <div class="line"></div>
       <p>
-        Projeto acadêmico desenvolvido durante o curso de UI/UX Design, com o objetivo de criar uma solução digital para conectar tutores de pets a cuidadores e serviços especializados.
+        Tutores de pets enfrentam dificuldade em encontrar cuidadores confiáveis,
+        compatíveis com o perfil do animal e disponíveis no momento necessário.
       </p>
-
     </div>
-  </section>
 
-  <!-- PROBLEMA -->
-  <section class="section">
-    <div class="container">
-
-      <h2>Problema</h2>
-
+    <div class="detail-item">
+      <h3>Solução</h3>
+      <div class="line"></div>
       <p>
-        Encontrar alguém confiável para cuidar de um pet envolve segurança, compatibilidade e disponibilidade. Muitos usuários têm dificuldade em confiar em desconhecidos e encontrar serviços organizados e acessíveis.
+        O PetMatch propõe uma experiência baseada em match, permitindo encontrar,
+        comparar e agendar serviços com mais segurança, clareza e praticidade.
       </p>
-
     </div>
-  </section>
 
-  <!-- SOLUÇÃO -->
-  <section class="section">
-    <div class="container">
-
-      <h2>Solução</h2>
-
+    <div class="detail-item">
+      <h3>Meu papel</h3>
+      <div class="line"></div>
       <p>
-        O PetMatch propõe uma experiência baseada em match, onde o usuário pode encontrar cuidadores compatíveis com seu pet, visualizar perfis detalhados, conversar, agendar serviços e acompanhar tudo dentro do aplicativo.
+        Responsável pelo conceito do produto, pesquisa, arquitetura de informação,
+        fluxos de navegação, UI Design e identidade visual.
       </p>
-
     </div>
-  </section>
 
-  <!-- PESQUISA -->
-  <section class="section">
-    <div class="container">
+    <div class="detail-item">
+      <h3>Escopo</h3>
+      <div class="line"></div>
+      <p>
+        Protótipo de alta fidelidade, definição de fluxo principal, sistema visual e organização das telas centrais.
+      </p>
+    </div>
 
+  </div>
+</section>
+
+<!-- RESEARCH -->
+<section class="section research">
+  <div class="container">
+
+    <div class="section-header">
       <h2>Pesquisa</h2>
-
       <p>
-        A pesquisa incluiu análise de concorrentes, entrevistas exploratórias com usuários e levantamento de hipóteses sobre comportamento e tomada de decisão na contratação de serviços pet.
-      </p>
+A pesquisa combinou análise de tendências de busca, entrevistas exploratórias com usuários e construção de hipóteses sobre comportamento, confiança e critérios de decisão na contratação de serviços para pets.
+</p>
+    </div>
 
-      <!-- PRINT GOOGLE TRENDS -->
-      <img src="assets/images/trends.png" alt="Google Trends">
+    <div class="research-image">
+      <img src="assets/images/petmatch-research.png" alt="Pesquisa PetMatch">
+    </div>
 
-      <!-- PRINT BENCHMARK -->
-      <img src="assets/images/benchmark.png" alt="Benchmark">
+    <div class="research-insights">
+      <p>Confiança é o principal fator na decisão</p>
+      <p>Compatibilidade com o pet pesa tanto quanto proximidade</p>
+      <p>Informações claras reduzem insegurança</p>
+    </div>
 
-      <!-- PRINT ENTREVISTAS -->
-      <img src="assets/images/interviews.png" alt="Entrevistas">
+  </div>
+</section>
+
+<!-- ANALYSIS -->
+<section class="section analysis">
+  <div class="container">
+
+    <div class="section-header">
+      <h2>Análise Competitiva</h2>
+    </div>
+
+    <div class="analysis-content">
+
+      <div class="analysis-text">
+        <p>
+          Foram analisados apps e plataformas de serviços pet para identificar padrões de descoberta, comparação, confiança e conversão dentro da jornada do usuário.
+        </p>
+      </div>
+
+      <div class="analysis-image">
+        <img src="assets/images/benchmark.png" alt="Análise competitiva PetMatch">
+      </div>
 
     </div>
-  </section>
 
-  <!-- INSIGHTS -->
-  <section class="section">
-    <div class="container">
+  </div>
+</section>
 
-      <h2>Insights</h2>
-
-      <ul>
-        <li>Confiança é o principal fator na decisão de contratação</li>
-        <li>Usuários preferem cuidadores com avaliações e referências</li>
-        <li>Compatibilidade com o pet é tão importante quanto localização</li>
-        <li>Informações claras reduzem insegurança</li>
-      </ul>
-
+<!-- PERSONA -->
+<section class="section persona">
+  <div class="container">
+    <div class="section-header">
+      <h2>Persona</h2>
     </div>
-  </section>
 
-  <!-- FLUXO -->
-  <section class="section">
-    <div class="container">
+    <div class="persona-image">
+      <img src="assets/images/persona-petmatch.png" alt="Persona do projeto PetMatch">
+    </div>
+  </div>
+</section>
 
-      <h2>Fluxo do usuário</h2>
+<!-- USER FLOW -->
+<section class="section user-flow">
+  <div class="container">
 
+    <div class="section-header">
+      <h2>Fluxo do Usuário</h2>
       <p>
         O fluxo foi estruturado para guiar o usuário desde a descoberta até a contratação do serviço.
       </p>
-
-      <img src="assets/images/fluxo-petmatch.png" alt="Fluxo do usuário">
-
     </div>
-  </section>
 
-  <!-- DECISÕES -->
-  <section class="section">
-    <div class="container">
-
-      <h2>Decisões de design</h2>
-
-      <ul>
-        <li>Remoção do preço na tela de match para reduzir poluição visual</li>
-        <li>Reposicionamento do mapa como parte da exploração</li>
-        <li>Ajuste do escopo para manter clareza e usabilidade</li>
-      </ul>
-
+    <div class="user-flow-image">
+      <img src="assets/images/fluxo-petmatch.png" alt="Fluxo do usuário PetMatch">
     </div>
-  </section>
 
-  <!-- PROTÓTIPO -->
-  <section class="section">
-    <div class="container">
+  </div>
+</section>
 
-      <h2>Protótipo</h2>
+<!-- UI DESIGN -->
+<section class="section ui-design">
+  <div class="container">
 
-      <a href="#" class="prototype-button">
-        Ver no Figma
-      </a>
-
-    </div>
-  </section>
-
-  <!-- IDENTIDADE VISUAL -->
-  <section class="section">
-    <div class="container">
-
-      <h2>Identidade visual</h2>
-
+    <div class="section-header">
+      <h2>UI Design</h2>
       <p>
-        A identidade foi desenvolvida para transmitir proximidade, cuidado e confiança, utilizando uma paleta quente e tipografia clara para facilitar a leitura e navegação.
+        A interface foi construída para transmitir proximidade, confiança e cuidado, com uma paleta quente e uma hierarquia visual clara.
       </p>
-
-      <img src="assets/images/style-guide-petmatch.png" alt="Style Guide">
-
     </div>
-  </section>
 
-  <!-- REFLEXÃO -->
-  <section class="section">
-    <div class="container">
+    <div class="ui-image">
+      <img src="assets/images/style-guide-petmatch.png" alt="Style Guide PetMatch">
+    </div>
 
-      <h2>Reflexão</h2>
+  </div>
+</section>
 
+<!-- ALL PAGES -->
+<section class="section all-pages">
+  <div class="container">
+
+    <div class="section-header">
+      <h2>Todas as páginas</h2>
       <p>
-        O projeto ainda está em fase de refinamento e não passou por testes formais com usuários. Algumas decisões foram tomadas com base em lógica de produto e ajustes iterativos, considerando limitações de tempo.
+        Estrutura visual das principais telas e organização do produto ao longo do fluxo.
       </p>
-
     </div>
-  </section>
 
-</main>
+    <div class="all-pages-image">
+      <img src="assets/images/prototipos-petmatch.png" alt="Telas do PetMatch">
+    </div>
 
-<!-- ===== FOOTER (PADRÃO EM TODAS) ===== -->
+  </div>
+</section>
+
+<!-- PROTOTYPE -->
+<section class="section prototype">
+  <div class="container">
+
+    <h2>Protótipo</h2>
+
+    <a href="#" class="prototype-button">
+      Ver no Figma
+    </a>
+
+  </div>
+</section>
+
+<!-- REFLECTION -->
+<section class="section reflection">
+  <div class="container">
+
+    <h2>Reflexão</h2>
+
+    <p>
+      O projeto evoluiu com decisões estratégicas sobre escopo e estrutura, equilibrando clareza de fluxo com complexidade do produto.
+    </p>
+
+    <p>
+      A ausência de testes formais com usuários foi a principal limitação, abrindo espaço para validações futuras e refinamento da experiência.
+    </p>
+
+  </div>
+</section>
+
+<section class="section next-steps">
+  <div class="container">
+
+    <div class="section-header">
+      <h2>Próximos Passos</h2>
+    </div>
+
+    <ol class="next-steps-list">
+      <li>Testes de usabilidade com usuários reais</li>
+      <li>Validação do fluxo de match e agendamento</li>
+      <li>Ajustes na arquitetura de informação</li>
+      <li>Refinamento da interface e consistência visual</li>
+      <li>Definição de MVP para desenvolvimento</li>
+    </ol>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
 <footer class="footer">
 
   <div class="footer-left">
-    Portfolio © 2026 Larissa Pinheiro. Todos os direitos reservados.
+    Portfolio © 2026 Larissa Pinheiro. Todos os Direitos Reservados.
   </div>
 
   <div class="footer-center">
-    <img src="assets/icons/woman.svg">
+    <img src="assets/icons/woman.svg" alt="logo">
   </div>
 
   <div class="footer-right">
-    Contato
+    Contact
   </div>
 
 </footer>
