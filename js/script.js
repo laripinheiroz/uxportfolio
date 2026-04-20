@@ -4,6 +4,7 @@ const header = document.querySelector('.header');
 const heroTitle = document.querySelector('.hero-title');
 const projectCards = document.querySelectorAll('.project-card');
 const projectsSection = document.querySelector('#projetos');
+const supportsHover = window.matchMedia('(hover: hover)').matches;
 
 const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
@@ -84,7 +85,7 @@ if (heroTitle && !prefersReducedMotion) {
 }
 
 // ===== MOVIMENTO 3D NOS CARDS =====
-if (!prefersReducedMotion) {
+if (!prefersReducedMotion && supportsHover) {
   projectCards.forEach((card) => {
     let frame = null;
 
@@ -101,13 +102,15 @@ if (!prefersReducedMotion) {
         const rotateY = (x - 0.5) * 4;
         const rotateX = (0.5 - y) * 4;
 
-        card.style.transform = `perspective(900px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-6px)`;
+        card.style.setProperty('--card-tilt-x', `${rotateX}deg`);
+        card.style.setProperty('--card-tilt-y', `${rotateY}deg`);
         frame = null;
       });
     });
 
     card.addEventListener('mouseleave', () => {
-      card.style.transform = '';
+      card.style.removeProperty('--card-tilt-x');
+      card.style.removeProperty('--card-tilt-y');
     });
   });
 }
