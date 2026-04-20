@@ -25,6 +25,13 @@ if (prefersReducedMotion) {
           return;
         }
 
+  const revealObserver = new IntersectionObserver(
+    (entries, observer) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) {
+          return;
+        }
+
         entry.target.classList.add('active');
         observer.unobserve(entry.target);
       });
@@ -113,4 +120,19 @@ if (!prefersReducedMotion && supportsHover) {
       card.style.removeProperty('--card-tilt-y');
     });
   });
+}
+
+// ===== HEADER "GLASS" AO ROLAR =====
+if (header) {
+  const updateHeaderOnScroll = () => {
+    if (window.scrollY > 16) {
+      header.classList.add('header-scrolled');
+      return;
+    }
+
+    header.classList.remove('header-scrolled');
+  };
+
+  updateHeaderOnScroll();
+  window.addEventListener('scroll', updateHeaderOnScroll, { passive: true });
 }

@@ -216,6 +216,7 @@ strong {
 
 .project-card:hover {
   box-shadow: 0 12px 28px rgba(24, 22, 22, 0.08);
+  transform: translateY(-6px);
 }
 
 @media (prefers-reduced-motion: reduce) {

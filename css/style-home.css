@@ -37,6 +37,7 @@
   will-change: transform, filter;
   transition: transform 0.25s ease-out;
   animation: glowPortfolio 4.5s ease-in-out infinite;
+  animation: floatingPortfolio 4.5s ease-in-out infinite;
 }
 
 /* ===== PROJECTS ===== */
@@ -245,5 +246,12 @@
   }
   50% {
     filter: drop-shadow(0 12px 24px rgba(64, 7, 8, 0.16));
+@keyframes floatingPortfolio {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-12px);
   }
 }
