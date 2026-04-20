@@ -33,6 +33,7 @@
   right: 80px;
   bottom: 80px;
   width: 500px;
+  transition: transform 0.5s ease, opacity 0.5s ease;
 }
 
 /* ===== PROJECTS ===== */
@@ -77,6 +78,7 @@
   align-items: center;
   gap: 32px;
   position: relative;
+  transition: transform 0.45s ease, box-shadow 0.45s ease;
 }
 
 .project-info {
@@ -127,28 +129,7 @@
 
 .project-image img {
   width: 500px;
-  transition: transform 0.5s ease;
-}
-
-
-/* ===== ANIMAÇÃO BASE ===== */
-.reveal {
-  opacity: 0;
-  transform: translateY(40px);
-  transition: all 0.8s ease;
-}
-
-.reveal.active {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.reveal.delay-1 {
-  transition-delay: 0.15s;
-}
-
-.reveal.delay-2 {
-  transition-delay: 0.3s;
+  transition: transform 0.55s ease, filter 0.55s ease;
 }
 
 /* ===== RESPONSIVO ===== */
@@ -210,18 +191,6 @@
     max-width: 500px;
   }
 }
-
-
-.project-card {
-  position: relative;
-}
-
-
-
-.project-card {
-  position: relative;
-}
-
 /* ===== CONTEXTO ===== */
 .projects-right {
   position: relative;
@@ -231,10 +200,14 @@
 /* ===== HOVER IMAGEM (sutil premium) ===== */
 .project-image img {
   width: 500px;
-  transition: transform 0.6s ease, filter 0.6s ease;
+  transition: transform 0.55s ease, filter 0.55s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-3px);
 }
 
 .project-card:hover .project-image img {
-  transform: translateY(-6px) scale(1.02);
-  filter: brightness(1.05);
+  transform: translateY(-3px) scale(1.01);
+  filter: brightness(1.02);
 }

@@ -15,6 +15,12 @@
   font-weight: 400;
   color: #181616;
   text-decoration: none;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.back-button:hover {
+  transform: translateX(-2px);
+  opacity: 0.85;
 }
 
 .project-title {
@@ -109,6 +115,7 @@
 .analysis-image img {
   width: 100%;
   display: block;
+  transition: transform 0.45s ease, filter 0.45s ease;
 }
 
 .persona-image {
@@ -122,6 +129,7 @@
   max-width: 1100px;
   height: auto;
   display: block;
+  transition: transform 0.45s ease, filter 0.45s ease;
 }
 
 /* ===== USER FLOW ===== */
@@ -136,6 +144,7 @@
   max-width: 900px;
   border-radius: 8px;
   display: block;
+  transition: transform 0.45s ease, filter 0.45s ease;
 }
 
 /* ===== UI DESIGN ===== */
@@ -150,6 +159,7 @@
   max-width: 1000px;
   border-radius: 8px;
   display: block;
+  transition: transform 0.45s ease, filter 0.45s ease;
 }
 
 /* ===== ALL PAGES ===== */
@@ -164,6 +174,7 @@
   max-width: 1100px;
   border-radius: 8px;
   display: block;
+  transition: transform 0.45s ease, filter 0.45s ease;
 }
 
 /* ===== PROTOTYPE ===== */
@@ -176,6 +187,21 @@
   text-decoration: none;
   font-family: 'Quicksand', sans-serif;
   font-size: 14px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.prototype-button:hover {
+  background-color: #5a0b0d;
+  transform: translateY(-1px);
+}
+
+.analysis-image img:hover,
+.persona-image img:hover,
+.user-flow-image img:hover,
+.ui-image img:hover,
+.all-pages-image img:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.01);
 }
 
 /* ===== REFLECTION ===== */
