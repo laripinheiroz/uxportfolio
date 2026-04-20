@@ -152,6 +152,19 @@ strong {
   box-shadow: 0 6px 20px rgba(24, 22, 22, 0.08);
 }
 
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  transition: box-shadow 0.3s ease, background-color 0.3s ease, backdrop-filter 0.3s ease;
+}
+
+.header-scrolled {
+  background-color: rgba(255, 255, 254, 0.86);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 6px 20px rgba(24, 22, 22, 0.08);
+}
+
 /* ===== FOOTER ===== */
 .footer {
   display: flex;
