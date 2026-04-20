@@ -33,11 +33,7 @@
   right: 80px;
   bottom: 80px;
   width: 500px;
-  transform: translate3d(0, 0, 0);
-  will-change: transform, filter;
-  transition: transform 0.25s ease-out;
-  animation: glowPortfolio 4.5s ease-in-out infinite;
-  animation: floatingPortfolio 4.5s ease-in-out infinite;
+  transition: transform 0.5s ease, opacity 0.5s ease;
 }
 
 /* ===== PROJECTS ===== */
@@ -82,10 +78,7 @@
   align-items: center;
   gap: 32px;
   position: relative;
-  transform-style: preserve-3d;
-  will-change: transform;
-  transition: transform 0.35s ease, box-shadow 0.35s ease;
-  transform: perspective(900px) rotateX(var(--card-tilt-x, 0deg)) rotateY(var(--card-tilt-y, 0deg));
+  transition: transform 0.45s ease, box-shadow 0.45s ease;
 }
 
 .project-info {
@@ -134,27 +127,9 @@
   text-decoration: none;
 }
 
-.project-image img { width: 500px; }
-
-
-/* ===== ANIMAÇÃO BASE ===== */
-.reveal {
-  opacity: 0;
-  transform: translateY(40px);
-  transition: all 0.8s ease;
-}
-
-.reveal.active {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.reveal.delay-1 {
-  transition-delay: 0.15s;
-}
-
-.reveal.delay-2 {
-  transition-delay: 0.3s;
+.project-image img {
+  width: 500px;
+  transition: transform 0.55s ease, filter 0.55s ease;
 }
 
 /* ===== RESPONSIVO ===== */
@@ -225,33 +200,14 @@
 /* ===== HOVER IMAGEM (sutil premium) ===== */
 .project-image img {
   width: 500px;
-  transition: transform 0.6s ease, filter 0.6s ease;
+  transition: transform 0.55s ease, filter 0.55s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-3px);
 }
 
 .project-card:hover .project-image img {
-  transform: translateY(-6px) scale(1.02);
-  filter: brightness(1.05);
-}
-
-@media (hover: none) {
-  .project-card {
-    transform: none;
-  }
-}
-
-@keyframes glowPortfolio {
-  0%,
-  100% {
-    filter: drop-shadow(0 0 0 rgba(64, 7, 8, 0));
-  }
-  50% {
-    filter: drop-shadow(0 12px 24px rgba(64, 7, 8, 0.16));
-@keyframes floatingPortfolio {
-  0%,
-  100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-12px);
-  }
+  transform: translateY(-3px) scale(1.01);
+  filter: brightness(1.02);
 }

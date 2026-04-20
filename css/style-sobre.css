@@ -72,6 +72,7 @@
   width: fit-content;
   padding: 8px;
   background: #FFFFFE;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .sobre-link span {
@@ -85,6 +86,15 @@
   width: 15px;
   height: 15px;
   display: block;
+  transition: transform 0.3s ease;
+}
+
+.sobre-link:hover {
+  background: rgba(64, 7, 8, 0.04);
+}
+
+.sobre-link:hover img {
+  transform: translateX(2px);
 }
 
 /* responsivo */

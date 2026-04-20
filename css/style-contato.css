@@ -51,6 +51,7 @@
   gap: 8px;
   width: fit-content;
   padding-top: 4px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
 .curriculo-link span {
@@ -64,6 +65,11 @@
   width: 15px;
   height: 15px;
   display: block;
+  transition: transform 0.3s ease;
+}
+
+.curriculo-link:hover img {
+  transform: translateX(2px);
 }
 
 /* COLUNA DIREITA */
@@ -129,6 +135,12 @@
   font-size: 16px;
   color: #181616;
   padding: 8px 0 10px;
+  transition: border-color 0.3s ease;
+}
+
+.field input:focus,
+.field textarea:focus {
+  border-bottom-color: #400708;
 }
 
 .field textarea {
@@ -150,6 +162,11 @@
   font-size: 12px;
   font-weight: 400;
   cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.contato-button:hover {
+  background: #5a0b0d;
 }
  
 .contato-form-wrap {
