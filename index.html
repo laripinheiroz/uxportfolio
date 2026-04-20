@@ -9,15 +9,13 @@
   <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@400&family=Quicksand:wght@400&display=swap" rel="stylesheet">
 
   <!-- CSS -->
-<link rel="stylesheet" href="css/style-base.css">
-<link rel="stylesheet" href="css/style-home.css">
+  <link rel="stylesheet" href="css/style-base.css">
+  <link rel="stylesheet" href="css/style-home.css">
 </head>
 
 <body>
 
 <header class="header">
-  
-  <!-- ESQUERDA -->
   <div class="header-left">
     <img src="assets/icons/woman.svg" alt="logo" class="logo">
 
@@ -29,24 +27,19 @@
     </nav>
   </div>
 
-  <!-- DIREITA -->
-    <div class="header-right">
-  <img src="assets/icons/language.svg" alt="idioma">
+  <div class="header-right">
+    <img src="assets/icons/language.svg" alt="idioma">
 
-  <a href="https://www.linkedin.com/in/larissapinheiroz/" 
-     target="_blank" 
-     rel="noopener noreferrer">
-    <img src="assets/icons/linkedin.svg" alt="LinkedIn">
-  </a>
-</div>
+    <a href="https://www.linkedin.com/in/larissapinheiroz/" target="_blank" rel="noopener noreferrer">
+      <img src="assets/icons/linkedin.svg" alt="LinkedIn">
+    </a>
   </div>
-
 </header>
 
 <!-- HERO -->
-<section class="hero">
+<section class="hero reveal">
 
-  <div class="hero-text">
+  <div class="hero-text reveal delay-1">
     <h1>Oi! Eu sou a Larissa, uma UX/UI Designer</h1>
     <p>
       Eu transformo desafios complexos em soluções centradas na pessoa usuária,
@@ -59,22 +52,38 @@
 </section>
 
 <!-- PROJECTS -->
-<section class="projects" id="projetos">
+<section class="projects reveal" id="projetos">
 
   <div class="projects-container">
 
-    <!-- ESQUERDA -->
     <div class="projects-left">
       <span>Principais Projetos</span>
     </div>
 
-    <!-- DIREITA -->
     <div class="projects-right">
+      <div class="projects-right">
+
+  <!-- RAIL GLOBAL -->
+  <div class="projects-rail">
+    <img src="assets/icons/rosearrow.svg" alt="">
+  </div>
+
+  <!-- PROJETO 1 -->
+  <div class="project-card">
+    ...
+  </div>
+
+  <!-- PROJETO 2 -->
+  <div class="project-card">
+    ...
+  </div>
+
+</div>
 
       <!-- PROJETO 1 -->
       <div class="project-card">
 
-        <div class="project-info">
+        <div class="project-info reveal delay-1">
           <h3>Plantaê</h3>
           <div class="line"></div>
 
@@ -99,7 +108,7 @@
           <a href="projeto1.html" class="project-link">Ver Projeto →</a>
         </div>
 
-        <div class="project-image">
+        <div class="project-image reveal delay-2">
           <img src="assets/images/plantae1.png" alt="Projeto Plantaê">
         </div>
 
@@ -108,13 +117,13 @@
       <!-- PROJETO 2 -->
       <div class="project-card">
 
-        <div class="project-info">
+        <div class="project-info reveal delay-1">
           <h3>PetMatch</h3>
           <div class="line"></div>
 
           <p>
-Plataforma digital que conecta tutores a cuidadores de pets, permitindo encontrar, comparar e agendar serviços com mais confiança, praticidade e compatibilidade com o perfil do animal.
-</p>
+            Plataforma digital que conecta tutores a cuidadores de pets, permitindo encontrar, comparar e agendar serviços com mais confiança, praticidade e compatibilidade com o perfil do animal.
+          </p>
 
           <div class="tags">
             <span>Product Design</span>
@@ -122,7 +131,6 @@ Plataforma digital que conecta tutores a cuidadores de pets, permitindo encontra
             <span>Prototipação</span>
             <span>Mobile App</span>
             <span>Pesquisa</span>
-            
           </div>
 
           <div class="tags">
@@ -133,20 +141,18 @@ Plataforma digital que conecta tutores a cuidadores de pets, permitindo encontra
           <a href="projeto2.html" class="project-link">Ver Projeto →</a>
         </div>
 
-        <div class="project-image">
+        <div class="project-image reveal delay-2">
           <img src="assets/images/pet-match.png" alt="Projeto PetMatch">
         </div>
 
       </div>
 
     </div>
-
   </div>
 
 </section>
 
 <footer class="footer">
-
   <div class="footer-left">
     Portfolio © 2026 Larissa Pinheiro. Todos os Direitos Reservados.
   </div>
@@ -158,8 +164,8 @@ Plataforma digital que conecta tutores a cuidadores de pets, permitindo encontra
   <div class="footer-right">
     Contact
   </div>
-
 </footer>
 
+<script src="js/script.js"></script>
 </body>
 </html>
