@@ -33,6 +33,7 @@
   right: 80px;
   bottom: 80px;
   width: 500px;
+  animation: floatingPortfolio 4.5s ease-in-out infinite;
 }
 
 /* ===== PROJECTS ===== */
@@ -237,4 +238,14 @@
 .project-card:hover .project-image img {
   transform: translateY(-6px) scale(1.02);
   filter: brightness(1.05);
+}
+
+@keyframes floatingPortfolio {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
 }
