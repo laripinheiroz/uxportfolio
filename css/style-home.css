@@ -33,6 +33,10 @@
   right: 80px;
   bottom: 80px;
   width: 500px;
+  transform: translate3d(0, 0, 0);
+  will-change: transform, filter;
+  transition: transform 0.25s ease-out;
+  animation: glowPortfolio 4.5s ease-in-out infinite;
 }
 
 /* ===== PROJECTS ===== */
@@ -77,6 +81,9 @@
   align-items: center;
   gap: 32px;
   position: relative;
+  transform-style: preserve-3d;
+  will-change: transform;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
 }
 
 .project-info {
@@ -237,4 +244,14 @@
 .project-card:hover .project-image img {
   transform: translateY(-6px) scale(1.02);
   filter: brightness(1.05);
+}
+
+@keyframes glowPortfolio {
+  0%,
+  100% {
+    filter: drop-shadow(0 0 0 rgba(64, 7, 8, 0));
+  }
+  50% {
+    filter: drop-shadow(0 12px 24px rgba(64, 7, 8, 0.16));
+  }
 }
