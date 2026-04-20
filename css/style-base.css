@@ -211,10 +211,11 @@ strong {
 
 /* hover refinado (projects) */
 .project-card {
-  transition: transform 0.4s ease;
+  transition: box-shadow 0.35s ease;
 }
 
 .project-card:hover {
+  box-shadow: 0 12px 28px rgba(24, 22, 22, 0.08);
   transform: translateY(-6px);
 }
 
