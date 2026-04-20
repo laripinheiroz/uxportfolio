@@ -195,9 +195,8 @@ strong {
 /* ===== ANIMAÇÕES ===== */
 
 .reveal {
-  opacity: 0;
-  transform: translateY(40px);
-  transition: all 0.8s ease;
+  opacity: 1 !important;
+  transform: none !important;
 }
 
 .reveal.active {
